@@ -1,0 +1,10 @@
+<%= @grid_array %>
+<p>Please type your best guest</p>
+
+<form action="/score" method="get">
+  <input type="text" name="answer" placeholder="your turn">
+  <input type="hidden" name="grid" value="<%= @grid_array.join %>">
+  <input type="hidden" name="start_time" value="<%=@start_time%>">
+  <input type="submit">
+</form>
+
